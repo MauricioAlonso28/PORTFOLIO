@@ -1,0 +1,155 @@
+.detail {
+    width: 65%;
+    height: 90%;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    background-color: rgb(0, 0, 0);
+}
+.top {
+    height: 2.5%;
+    width: 100%;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+}
+.closeProject {
+    position: absolute;
+    right: 10px;
+    background-color: white;
+    font-size: 10px;
+    padding: 1px 5px;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+.closeProject:hover {
+    background-color: rgb(232, 15, 15);
+    color: white;
+}
+.main {
+    height: 97.5%;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.img {
+    position: absolute;
+    width: 95%;
+    height: 250px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+    top: 3%;
+}
+.h4Detail {
+    position: absolute;
+    width: 95%;
+    top: 48%;
+}
+.h4 {
+    background-color: rgb(48, 43, 43);
+    padding: 3px;
+    margin: 0;
+    width: 120px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px 5px 0 0;
+}
+.detailP {
+    margin: 0;
+    background-color: rgb(48, 43, 43);
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding: 16px 10px;
+    color: white;
+}
+.stack {
+    margin: 0;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(48, 43, 43);
+    padding: 0  10px 16px 10px;
+    margin: 0;
+}
+.stack strong {
+    letter-spacing: 1px;
+}
+.visit {
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+    background-color: rgb(48, 43, 43);
+    border: 2px solid rgba(255, 251, 251, 0.3);
+    font-size: 21px;
+    transition: all 0.2s ease-in-out;
+}
+.link {
+    color: rgb(214, 213, 213);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.visit:hover {
+    background-color: rgb(69, 64, 64);
+}
+.visit2 {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    .visit {
+        display: none;
+    }
+    .visit2 {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        bottom: 5%;
+        right: 3%;
+        background-color: rgb(48, 43, 43);
+        border: 2px solid rgba(255, 251, 251, 0.3);
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+    }
+    .visit2:hover {
+        background-color: rgb(69, 64, 64);
+    }
+}
+@media (max-width: 1024px) {
+    .detail {
+        width: 85%;
+    }
+    .closeProject {
+        font-size: 7px;
+        padding: 1px 4px;
+    }
+    .img {
+        width: 95%;
+        height: 180px;
+    }
+    .h4Detail {
+        top: 40%;
+    }
+    .h4 {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+    .detailP {
+        font-size: 12px;
+    }
+    .stack {
+        margin: 0;
+        color: white;
+        font-size: 14px;
+    }
+    .visit2 {
+        font-size: 14px;
+    }   
+}

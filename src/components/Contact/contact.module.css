@@ -1,0 +1,195 @@
+.line {
+    height: 2.5%;
+    width: 100%;
+    font-size: 11px;
+    background-color: black;
+    color: white;
+}
+.main {
+    height: 97.5%;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divMain {
+    position: relative; 
+    width: 98.5%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divMain::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../resources/contact-bg.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+}
+.divMainAbs {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    animation: fadeInAnimation 2s ease-in-out forwards; 
+}
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+.contactMe, .socials {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.me {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.socials {
+    gap: 50px;
+}
+.socialsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.circleLogo {
+    display: flex; 
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden; 
+    transition: transform .3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleLogo:hover {
+    transform: scale(1.2); 
+}
+
+.logo {
+    height: 25px;
+    padding: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1);
+}
+
+.title {
+    font-size: 45px;
+    color: rgb(121, 190, 246);
+    font-family: 'Zen Dots', cursive;
+    word-spacing: 13px;
+    animation: title 3s infinite;
+}
+@keyframes title{
+    0%, 100% {
+        color: rgb(121, 190, 246);
+    }
+    50% {
+        color :rgb(121, 190, 230);
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.inputs, .inputText {
+    width: 450px;
+    border-radius: 5px;
+    background-color: rgba(54, 72, 109, 0.879);
+    color: white;
+    padding: 5px;
+    border: 1px solid gray;
+    font-family: 'Libre Baskerville', serif;
+}
+.inputText {
+    height: 150px;
+    font-size: 15px;
+    resize: none;
+}
+.inputs {
+    height: 30px;
+}
+.inputBtn{
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 25px;
+    border-radius: 15px;
+    background-color: rgb(121, 190, 246);
+    color: rgb(40, 38, 38);
+    font-weight: bold;
+    border: 1px solid rgb(40, 38, 38);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.inputBtn:hover {
+    background-color: rgb(67, 204, 249);
+    color: black;
+    border: 1px solid black;
+}
+@media (max-width: 1024px) {
+    .contactMe, .socials {
+        width: 50%;
+    }
+    .me {
+        width: 180px;
+        height: 180px;
+    }
+    .socials {
+        gap: 40px;
+    }
+    .socialsList {
+        gap: 15px;
+    }
+    .logo {
+        height: 19px;
+        padding: 10px;
+    }
+    
+    .title {
+        word-spacing: 15px;
+    }
+    .form {
+        gap: 15px;
+    }
+    .inputs, .inputText {
+        width: 320px;
+        font-size: 12px;
+    }
+    .inputText {
+        height: 130px;
+        font-size: 12px;
+    }
+    .inputs {
+        height: 20px;
+    }
+    .inputBtn{
+        text-align: center;
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+}

@@ -1,0 +1,86 @@
+aside {
+    width: 12%;
+    height: 100vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carpets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    position: absolute;
+    top: 6%;
+    text-align: center;
+}
+
+
+/* DIVS' STYLES*/
+
+.div1, .div2,
+.div3, .div4{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 08px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+.img {
+    background: url('../../resources/fileClose.svg');
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.img:hover {
+    background: url('../../resources/fileOpen.svg');
+}
+
+
+.btn {
+    position: absolute;
+    bottom: 6%;
+    cursor: pointer;
+    background: url('../../resources/btnAside.png') ;
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    transition: all .3s ease-in;
+}
+.btn:hover {
+    height: 65px;
+    width: 65px;
+}
+
+@media (max-width: 1024px) {
+    .div1, .div2,
+    .div3, .div4{
+        font-size: 7px;
+    }
+    .img {
+        height: 35px;
+        width: 35px;
+    }
+    .btn {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carpets {
+        height: 100%;
+        top: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

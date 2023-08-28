@@ -1,0 +1,76 @@
+.main {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.lightTablet {
+    display: none;
+}
+.darkTablet {
+    display: none;
+}
+.computer {
+    display: flex;
+    width: 100%;
+}
+.bg {
+    width: 95%;
+    background-color: rgba(240, 239, 239, 0);
+    height: 80%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.btn {
+    position: absolute;
+    right: 3%;
+    top: 4.5%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.darkTablet {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        right: 4%;
+    }
+}
+@media (max-width: 768px) {
+    .computer {
+        display: none;
+    }
+    .lightTablet {
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+        background: url('../../resources/bg-lightPhone.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .darkTablet {
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+        background: url('../../resources/bg-darkPhone.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .main {
+        display: none;
+    }
+}
+
+

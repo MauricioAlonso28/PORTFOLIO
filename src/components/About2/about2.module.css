@@ -1,0 +1,212 @@
+.line {
+    height: 2.5%;
+    width: 100%;
+    font-size: 11px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.main {
+    height: 97.5%;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divMain {
+    position: relative; 
+    width: 98.5%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divMain::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../resources/bg-about2.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2; 
+}
+@keyframes name {
+    0%, 100% {
+        text-shadow: none;
+    }
+    25% {
+        text-shadow: -15px -15px 15px rgba(0, 0, 0, 0.7), 2px 2px 2px rgba(133, 225, 255, 0.714);
+    }
+    50% {
+        text-shadow: -20px -20px 20px rgba(0, 0, 0, 0.7), 2px 2px 2px rgba(101, 226, 248, 0.967);
+    }
+    75% {
+        text-shadow: -15px -15px 15px rgba(0, 0, 0, 0.7), 2px 2px 2px rgba(133, 225, 255, 0.714);
+    }
+}
+.name {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Zen Dots', cursive;
+    position: absolute;
+    top: 0.5%;
+    letter-spacing: 2px;
+    color: white;
+    animation: name 3s infinite;
+}
+.title {
+    position: absolute;
+    top: 14%;
+    font-size: 24px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+.description {
+    position: absolute;
+    bottom: 35%;
+    padding: 0 15px;
+    background-color: rgba(111, 196, 245, 0.04);
+    color: azure;
+    border-radius: 0.8em;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 500px;
+    height: 150px;
+    opacity: 0; 
+    /* transform: translateY(100%); */
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    box-shadow: 1px 1px 1px 2px rgba(101, 226, 248, 0.367);
+}
+.showDescription {
+    opacity: 1;
+    /* transform: translateY(0); */
+    animation: rainfall 1.5s linear forwards;
+}
+.bg {
+    width: 95%;
+    background-color: rgba(240, 239, 239, 0);
+    height: 80%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@keyframes rainfall {
+    from {
+      background-position: 0 100%;
+    }
+    to {
+      background-position: 0 0;
+    }
+}
+.containImgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    position: absolute;
+    bottom: 10%;
+}
+.img1, .img2 {
+    height: 300px;
+    width: 300px;
+}
+.btnBack {
+    display: none;
+}
+.linkBtn {
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+}
+.img3 {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .name {
+        font-size: 40px;
+    }
+    .title {
+        top: 13%;
+        font-size: 18px;
+    }
+    .description {
+        padding: 0 10px;
+        font-size: 12px;
+        width: 350px;
+        height: 120px;
+        box-shadow: 1px 1px 1px 1px rgba(101, 226, 248, 0.367);
+    }
+    .containImgs {
+        width: 700px;
+    }
+    .img1, .img2 {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .btnBack{
+        display: block;
+        z-index: 3;
+        font-size: 10px;
+        transition: all .3s ease-in;
+    }
+    .btnBack:hover {
+        background-color: red;
+    }
+}
+@media (max-width: 480px) {
+    .line {
+        font-size: 9px;
+    }
+    .btnBack{
+        font-size: 7px;
+        padding: 0.5px 3px;
+    }
+    .name {
+        font-size: 25px;
+    }
+    .title {
+        top: 10%;
+        font-size: 14px;
+    }
+    .description {
+        padding: 0 5px;
+        font-size: 10px;
+        width: 320px;
+        height: 100px;
+        box-shadow: 1px 1px 1px 1px rgba(101, 226, 248, 0.367);
+        bottom: 45%;
+    }
+    .containImgs {
+        background: url('../../resources/about-phone.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 120px;
+        width: 120px;
+        bottom: 25%;
+        animation: fadeInAnimation 2s ease-in-out forwards;
+    }
+    @keyframes fadeInAnimation {
+        from {
+            opacity: 0; 
+        }
+        to {
+            opacity: 1; 
+        }
+    }
+    .img1, .img2 {
+        display: none;
+    }
+}
