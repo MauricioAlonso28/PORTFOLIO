@@ -288,3 +288,38 @@
         width: 120px;
     }
 }
+@media (max-width: 320px){
+    .btnBack{
+        font-size: 5.5px;
+    }
+    .files {
+        width: 45px;
+        height: 25px;
+    }
+    .files::before {
+        top: -5.5px;
+        height: 4px;
+        width: 12px;
+    }
+    .titleProjects {
+        font-size: 12px;
+    }
+    .subtitleProject {
+        font-size: 7px;
+    }
+    .logos {
+        height: 12px;
+        width: 12px;
+    }
+    .card {
+        width: 180px;  
+        height: 90px; 
+    }
+    .card p {
+        font-size: 0.9em;
+    }
+    .selector {
+        height: 100px;
+        width: 100px;
+    }
+}

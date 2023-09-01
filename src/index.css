@@ -35,6 +35,6 @@ code {
 
 @media (max-width: 768px) {
   #root {
-    background: red;
+    /* background: red; */
   }
 }

@@ -210,3 +210,24 @@
         display: none;
     }
 }
+@media (max-width: 320px){
+    .btnBack{
+        font-size: 5.5px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .title {
+        top: 9%;
+        font-size: 12px;
+    }
+    .description {
+        font-size: 9px;
+        width: 280px;
+    }
+    .containImgs {
+        height: 100px;
+        width: 100px;
+        bottom: 22%;
+    }
+}

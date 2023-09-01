@@ -325,3 +325,8 @@
         padding: 3px 8px;
     }
 }
+@media (max-width: 320px){
+    .btnBack{
+        font-size: 5.5px;
+    }
+}

@@ -198,3 +198,27 @@
         font-size: 11px;
     }  
 }
+@media (max-width: 320px){
+    .img {
+        height: 115px;
+    }
+    .h4Detail {
+        top: 45%;
+    }
+    .h4 {
+        padding: 1px;
+        width: 70px;
+        font-size: 9px;
+    }
+    .detailP {
+        font-size: 8px;
+        padding: 6px 3px;
+    }
+    .stack {
+        font-size: 9px;
+        padding: 0  5px 8px 5px;
+    }
+    .visit2 {
+        font-size: 9px;
+    }  
+}
