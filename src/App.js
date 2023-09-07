@@ -16,25 +16,25 @@ import Projects2 from './components/Projects2/Projects2';
 import Contact2 from './components/Contact2/Contact2';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const handleContextMenu = (event) => {
-    event.preventDefault();
-    setIsDarkMode(!isDarkMode);
-  };
+    const handleContextMenu = (event) => {
+        event.preventDefault();
+        setIsDarkMode(!isDarkMode);
+    };
 
-  useEffect(() => {
-    const bodyBackground = isDarkMode ? `url(${bgDark})` : `url(${bgLight})`;
-    const bgBody = document.querySelector('#root')
-    bgBody.style.backgroundImage = bodyBackground;
-  }, [isDarkMode]);
+    useEffect(() => {
+        const bodyBackground = isDarkMode ? `url(${bgDark})` : `url(${bgLight})`;
+        const bgBody = document.querySelector('#root')
+        bgBody.style.backgroundImage = bodyBackground;
+    }, [isDarkMode]);
 
-  const [isDarkTablet, setIsDarkTablet] = useState(false);
+    const [isDarkTablet, setIsDarkTablet] = useState(false);
 
-  const handleTabletMenu = (event) => {
-      event.preventDefault();
-      setIsDarkTablet(!isDarkTablet);
-  }
+    const handleTabletMenu = (event) => {
+        event.preventDefault();
+        setIsDarkTablet(!isDarkTablet);
+    }
 
   return (
     <>
