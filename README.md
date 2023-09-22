@@ -11,3 +11,13 @@ In this space, you'll find a glimpse of my passion for web development. I've uti
 📧 If you're interested in collaboration or have any questions, please don't hesitate to reach out. I'm eager to hear your feedback and suggestions!
 
 Thank you for visiting my portfolio!
+
+
+# Sections
+- About
+- Skills
+- Projects
+- Contact
+
+
+
