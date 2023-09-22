@@ -19,5 +19,7 @@ Thank you for visiting my portfolio!
 - Projects
 - Contact
 
-
+## Stack
+. ReactJs
+. Css Modules
 
