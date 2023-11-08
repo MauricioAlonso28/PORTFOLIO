@@ -2,12 +2,14 @@ import Style from './projects2.module.css'
 import { useState } from 'react';
 import Project1 from '../Projects2/Project2/Project1';
 import Project2 from '../Projects2/Project2/Project2';
+import Project3 from './Project2/Project3';
+import Project4 from './Project2/Project4';
 import img1 from '../../resources/skills/digimon.png'
 import img2 from '../../resources/skills/r&m.png'
 import img3 from '../../resources/skills/plant.png'
+import img4 from '../../resources/skills/world.svg'
 import selectImg from '../../resources/select.png'
 import { NavLink } from 'react-router-dom'
-import Project3 from './Project2/Project3';
 
 function Projects2 (){
   const [projectDetailsIndex, setProjectDetailsIndex] = useState(null);
@@ -15,15 +17,18 @@ function Projects2 (){
     'Digidéx',
     'Rick & Morty',
     'Potted Plants',
+    'Countries-App',
   ]
 
   const projectComponents = [
+    <Project4 name={nameProjects[3]} onClose={onClose}/>,
     <Project1 name={nameProjects[0]} onClose={onClose}/>,
     <Project2 name={nameProjects[1]} onClose={onClose}/>,
     <Project3 name={nameProjects[2]} onClose={onClose}/>,
   ];
 
   const imgProjects = [
+    img4,
     img1,
     img2,
     img3,
