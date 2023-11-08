@@ -1,3 +1,4 @@
+
 # Portfolio
 
 🚀 Welcome to my personal portfolio built with React and CSS Modules! 🌟
@@ -20,6 +21,31 @@ Thank you for visiting my portfolio!
 - Contact
 
 ## Stack
-. ReactJs
-. Css Modules
+* ReactJs
+* Css Modules
 
+## Screenshots
+
+**About**
+
+<img src="./img/about.gif" alt="" width="384" height="216" />
+
+**Skills**
+
+<img src="./img/skills.gif" alt="" width="384" height="216" />
+
+**Projects**
+
+<img src="./img/projects.gif" alt="" width="384" height="216" />
+
+**Contact**
+
+<img src="./img/contact.gif" alt="" width="384" height="216" />
+
+**Mobile Responsive**
+
+<img src="./img/mobile.gif" alt="" width="174" height="216"/>
+
+**Tablet Responsive**
+
+<img src="./img/tablet.gif" alt="" width="304" height="216"/>
