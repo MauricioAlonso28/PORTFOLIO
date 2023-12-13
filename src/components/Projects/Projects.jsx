@@ -8,7 +8,9 @@ import img1 from '../../resources/skills/digimon.png'
 import img2 from '../../resources/skills/r&m.png'
 import img3 from '../../resources/skills/plant.png'
 import img4 from '../../resources/skills/world.svg'
+import img5 from '../../resources/projects/GAOTek-Logo-Final20.png'
 import selectImg from '../../resources/select.png'
+import Project5 from './Project/Project5';
 
 function Projects (){
   const [projectDetailsIndex, setProjectDetailsIndex] = useState(null);
@@ -17,6 +19,7 @@ function Projects (){
       'Rick & Morty',
       'Potted Plants',
       'Countries-App',
+      'GAO Tek'
   ]
 
   const projectComponents = [
@@ -24,6 +27,7 @@ function Projects (){
     <Project1 name={nameProjects[0]} onClose={onClose}/>,
     <Project2 name={nameProjects[1]} onClose={onClose}/>,
     <Project3 name={nameProjects[2]} onClose={onClose}/>,
+    <Project5 name={nameProjects[4]} onClose={onclose}/>,
   ];
 
   const imgProjects = [
@@ -31,6 +35,7 @@ function Projects (){
     img1,
     img2,
     img3,
+    img5,
   ]
 
   function onClose(){

@@ -10,6 +10,9 @@ import img3 from '../../resources/skills/plant.png'
 import img4 from '../../resources/skills/world.svg'
 import selectImg from '../../resources/select.png'
 import { NavLink } from 'react-router-dom'
+import Project5 from './Project2/Project5';
+import img5 from '../../resources/projects/GAOTek-Logo-Final20.png'
+
 
 function Projects2 (){
   const [projectDetailsIndex, setProjectDetailsIndex] = useState(null);
@@ -18,6 +21,7 @@ function Projects2 (){
     'Rick & Morty',
     'Potted Plants',
     'Countries-App',
+    'GAO Tek'
   ]
 
   const projectComponents = [
@@ -25,6 +29,7 @@ function Projects2 (){
     <Project1 name={nameProjects[0]} onClose={onClose}/>,
     <Project2 name={nameProjects[1]} onClose={onClose}/>,
     <Project3 name={nameProjects[2]} onClose={onClose}/>,
+    <Project5 name={nameProjects[4]} onClose={onClose}/>,
   ];
 
   const imgProjects = [
@@ -32,6 +37,7 @@ function Projects2 (){
     img1,
     img2,
     img3,
+    img5
   ]
 
   function onClose(){
