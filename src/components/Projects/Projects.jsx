@@ -8,7 +8,7 @@ import img1 from '../../resources/skills/digimon.png'
 import img2 from '../../resources/skills/r&m.png'
 import img3 from '../../resources/skills/plant.png'
 import img4 from '../../resources/skills/world.svg'
-import img5 from '../../resources/projects/GAOTek-Logo-Final20.png'
+import img5 from '../../resources/projects/iconNestle.png'
 import selectImg from '../../resources/select.png'
 import Project5 from './Project/Project5';
 
@@ -19,7 +19,7 @@ function Projects (){
       'Rick & Morty',
       'Potted Plants',
       'Countries-App',
-      'GAO Tek'
+      'Nestlé'
   ]
 
   const projectComponents = [

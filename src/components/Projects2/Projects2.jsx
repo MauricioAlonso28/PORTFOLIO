@@ -11,7 +11,7 @@ import img4 from '../../resources/skills/world.svg'
 import selectImg from '../../resources/select.png'
 import { NavLink } from 'react-router-dom'
 import Project5 from './Project2/Project5';
-import img5 from '../../resources/projects/GAOTek-Logo-Final20.png'
+import img5 from '../../resources/projects/iconNestle.png'
 
 
 function Projects2 (){
@@ -21,7 +21,7 @@ function Projects2 (){
     'Rick & Morty',
     'Potted Plants',
     'Countries-App',
-    'GAO Tek'
+    'Nestlé'
   ]
 
   const projectComponents = [

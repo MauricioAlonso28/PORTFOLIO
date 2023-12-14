@@ -1,5 +1,5 @@
 import Style from './projects.module.css'
-import img from '../../../resources/skills/Capturagao.PNG'
+import img from '../../../resources/skills/nestleImg.PNG'
 
 
 function Project5 (props) {
@@ -11,12 +11,12 @@ function Project5 (props) {
                 <button className={Style.closeProject} onClick={props.onClose}>x</button>
             </div>
             <div className={Style.main}>
-                <img className={Style.img} src={img} alt='GAO Tek' />
+                <img className={Style.img} src={img} alt='Nestlé' />
                 <div className={Style.h4Detail}>
                     <h4 className={Style.h4}>Description</h4>
                     <p className={Style.detailP}>
                     
-In crafting my WordPress project, I drew inspiration from GAO Tek and its cutting-edge services. The resulting website encapsulates the innovation and quality synonymous with GAO Tek, spotlighting top-notch testing solutions and leading-edge products. The intuitive design and engaging content convey a commitment to technical excellence, delivering users a unique and memorable online experience.</p>
+                    En crafting my WordPress project, I drew inspiration from Nestlé and its extensive range of high-quality products and services. The resulting website encapsulates the dedication to nutrition, innovation, and sustainable practices synonymous with Nestlé, spotlighting a diverse array of food and beverage offerings. The intuitive design and engaging content convey a commitment to providing users with a seamless and enjoyable online experience, reflecting Nestlé's longstanding reputation for excellence and consumer trust.</p>
                     <p className={Style.stack}>
                         <strong>Stack: </strong>
                         WordPress
