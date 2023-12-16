@@ -15,10 +15,10 @@ import Project5 from './Project/Project5';
 function Projects (){
   const [projectDetailsIndex, setProjectDetailsIndex] = useState(null);
   const nameProjects = [
+      'Countries-App',
       'Digidéx',
       'Rick & Morty',
       'Potted Plants',
-      'Countries-App',
       'Nestlé'
   ]
 
